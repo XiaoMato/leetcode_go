@@ -2,9 +2,7 @@ package main
 
 func sumOddLengthSubarrays(arr []int) int {
 	length := len(arr)
-
 	result := 0
-
 	for i := 1; i <= length; i += 2 {
 		result += subSum(arr, i)
 	}
