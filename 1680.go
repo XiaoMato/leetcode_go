@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 )
@@ -20,8 +19,4 @@ func concatenatedBinary(n int) int {
 		move = len(strconv.FormatInt(int64(i), 2))
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(concatenatedBinary(100000))
 }
