@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -11,8 +10,4 @@ func search(nums []int, target int) int {
 		return -1
 	}
 	return index
-}
-
-func main() {
-	fmt.Println(search([]int{-1, 0, 3, 5, 9, 12}, 2))
 }
