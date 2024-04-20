@@ -19,7 +19,3 @@ func lengthOfLastWord(s string) int {
 	}
 	return result
 }
-
-func main() {
-	println(lengthOfLastWord("luffy is still joyboy  "))
-}

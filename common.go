@@ -1,6 +1,16 @@
 package main
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
+
+func minInt(x, y int) int {
+	if x >= y {
+		return y
+	}
+	return x
+}
+
+func maxInt(x, y int) int {
+	if x >= y {
+		return x
+	}
+	return y
 }

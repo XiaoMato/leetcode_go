@@ -29,7 +29,3 @@ func min(x, y int) int {
 	}
 	return y
 }
-
-func main() {
-	println(integerReplacement(13))
-}

@@ -36,7 +36,3 @@ func findNumberOfLIS(nums []int) int {
 	}
 	return result
 }
-
-func main() {
-	println(findNumberOfLIS([]int{1, 2, 4, 3, 5, 4, 7, 2}))
-}

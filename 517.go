@@ -23,7 +23,3 @@ func findMinMoves(machines []int) int {
 	}
 	return step
 }
-
-func main() {
-	println(findMinMoves([]int{1, 0, 5}))
-}

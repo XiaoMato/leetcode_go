@@ -35,7 +35,3 @@ func IsPrime(value int) bool {
 	}
 	return true
 }
-
-func main() {
-	println(minSteps(16))
-}

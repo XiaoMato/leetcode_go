@@ -1,11 +1,5 @@
 package main
 
-import "fmt"
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
 
 func splitListToParts(head *ListNode, k int) []*ListNode {
 	var result []*ListNode
@@ -43,9 +37,4 @@ func splitListToParts(head *ListNode, k int) []*ListNode {
 		result = append(result, nil)
 	}
 	return result
-}
-
-func main() {
-	head := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 5, Next: &ListNode{Val: 6, Next: &ListNode{Val: 7, Next: nil}}}}}}}
-	fmt.Printf("%+v", splitListToParts(head, 3))
 }

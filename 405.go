@@ -29,7 +29,3 @@ func toHex(num int) string {
 	}
 	return result[i:]
 }
-
-func main() {
-	println(toHex(-1))
-}

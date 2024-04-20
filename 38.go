@@ -23,7 +23,3 @@ func countAndSay(n int) string {
 	}
 	return fmt.Sprint(result)
 }
-
-func main() {
-	println(countAndSay(4))
-}

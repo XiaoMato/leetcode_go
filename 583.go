@@ -20,7 +20,3 @@ func minDistance(word1 string, word2 string) int {
 	}
 	return x - y - mark[x-1][y-1] - 2
 }
-
-func main() {
-	println(minDistance("a", "a"))
-}

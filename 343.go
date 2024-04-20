@@ -23,7 +23,3 @@ func integerBreak(n int) int {
 	}
 	return result
 }
-
-func main() {
-	println(integerBreak(2))
-}

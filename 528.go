@@ -6,7 +6,7 @@ type Solution struct {
 	prefixSum []int
 }
 
-func Constructor(w []int) Solution {
+func PickIndexConstructor(w []int) Solution {
 	prefixSum := make([]int, len(w))
 	prefixSum[0] = w[0]
 	for i := 1; i < len(w); i++ {
