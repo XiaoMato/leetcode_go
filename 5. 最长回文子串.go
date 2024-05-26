@@ -2,7 +2,6 @@ package main
 
 import "slices"
 
-
 func longestPalindrome(s string) string {
 	bytes := []byte(s)
 	reverseBytes := slices.Clone(bytes)
@@ -24,7 +23,7 @@ func longestPalindrome(s string) string {
 		for j := 1; j < n; j++ {
 			if bytes[j] == reverseBytes[i] {
 				m[i][j] = m[i-1][j-1] + 1
-			} else  {
+			} else {
 				m[i][j] = 0
 			}
 		}
@@ -33,7 +32,7 @@ func longestPalindrome(s string) string {
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
 			if m[i][j] == max {
-				return s[j-max+1:j+1]
+				return s[j-max+1 : j+1]
 			}
 		}
 	}
